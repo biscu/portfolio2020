@@ -3,146 +3,243 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Test Port</title>
-  <link rel = "stylesheet" type = "text/css" href = "default.css" />
+<meta name="description" content="Product Designer">
+<title>Davide Biscuso</title>
+<!-- CSS -->
+<link rel = "stylesheet" type = "text/css" href = "default.css" />
+<!-- Open Graph -->
+<meta property="og:title" content="Davide Biscuso · Portfolio" />
+<meta property="og:url" content="https://www.biscu.design" />
+<meta property="og:image" content="https://www.biscu.design/assets/thumb.png" />
+<!-- Favicon -->
+<link rel="icon" href="assets/favicon.svg">
+<link rel="mask-icon" href="mask-icon.svg" color="#000000">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Preload font -->
+<link rel="preload" href="assets/font/RegolaProBold.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="assets/font/RegolaProMedium.otf" as="font" type="font/otf" crossorigin>
+<link rel="preload" href="assets/font/RegolaProRegular.otf" as="font" type="font/otf" crossorigin>
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body data-barba="wrapper">
+<body class="light">
 
-	<main data-barba="container" data-barba-namespace="home">
-		<!-- put here the content you wish to change
-		between your pages, like your main content <h1> or <p> -->
-			<header class="site-header">
-
-				<div class="section">
-					<div class="wrapper align-left">
-						<div class="inner">
-							<div class="box">
-								<h1 id="header" class="heading header">Davide is a Product Designer based in London, and he doesn't usually speak in third person.</h1>
-							</div>
-						</div>
+	<nav id="navbar" class="navbar fixed-top navbar-light desktop-only">
+		<div class="container justify-content-between">
+					<a class="" href="index.html">
+						<p class="line-height-0 mb-0 mt-1">dvd bsc</p>
+					</a>
+					<div class="d-flex ">
+					<a class="nav-link desktop-only mt-1" href="about.html"><p class="paragraph mr-auto">
+						About				
+					</p></a>
+					<a class="nav-link desktop-only mt-1" href="resume.html"><p class="paragraph mr-auto">
+						Resume				
+					</p></a>
+					<a class="nav-link desktop-only mt-1" href="photography.html"><p class="paragraph mr-auto">
+						Photography				
+					</p></a>
 					</div>
-				</div>
+		</div>
+	</nav>
 
-				<!-- Cumber Beach + Intro -->
-				<!-- <div class="section">
-					<div class="wrapper top pt-240">
-						<div class="inner anim1">
-							<span class="big aligned"><h2 class="onScroll">Camber Sands</h2></span>
-						</div>
-						<div class="inner">
-							<span class="small"><p class="paragraph anim-paragraph1">La sabbia non permette ai nostri occhi di guardare, </p></span>
-							<span class="small"><p class="paragraph anim-paragraph1">il vento non permette alle nostre orecchie di sentire,</p></span>
-							<span class="small"><p class="paragraph anim-paragraph1">le nuvole non permettono al sole di scaldarci.</p></span>
-							<span class="small"><p class="paragraph anim-paragraph1">Abbiamo scelto il giorno peggiore.</p></span>
-						</div>
-					</div>
-				</div> -->
+<!-- d-md-flex align-self-center -->
+	<div class="container" style="margin-top: 80px">
+		<div class="row vh-70 d-flex align-items-lg-center align-items-sm-top">
+			<div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
+				<h1 id="ciao" class="hero header align-self-center d-flex align-items-center align-self-end mb-3 mb-lg-0">
+					Hej!
+				</h1>
+			</div>
+			<div class="col-lg-6 col-md-12 col-sm-12">
+				<!-- <h1 id="bio" class="sub-title header">
+					I'm <div id="name" class="err header" onClick="spellName()">David</div> — a product designer at H&M. I create inclusive products with empathy, research and data, matching user needs with business requirements.
+				</h1> -->
+				<h1 id="bio" class="sub-title header">
+					I'm <div id="name" class="err header" onClick="spellName()">David</div> — a digital product designer creating inclusive products with empathy, research and data, matching user needs with business requirements.
+				</h1>
+			</div>
+		</div>
+	</div>
 
+	<!-- Back to top button but INVISIBLE -->
+	<a id="top-button" style="visibility:hidden;"  class="top-button" href="#index"><div class="">
+		<span>Back to index</span>
+	</div></a>
 
-
-				
-				<!-- Paragraph + Image -->
-				<!-- <div class="section">
-					<div class="wrapper pt-128">
-						<div class="inner anim2">
-							<span class="small"><p class="paragraph anim-paragraph2">Forever we remain oblivious to the future,</p></span>
-							<span class="small"><p class="paragraph anim-paragraph2">lost to the past and enduring our torture.</p></span>
-							<span class="small"><p class="paragraph anim-paragraph2">Forever we take chances to settle our scores,</p></span>
-							<span class="small"><p class="paragraph anim-paragraph2">losing some battles and winning some wars.</p></span>
-						</div>
-						<div class="inner">
-							<div class="img-wrapper">
-								<div class="mask">
-									<img class="photo4 asyncImage" src="assets/photo4-min.jpg" data-src="assets/photo4.jpg" alt="">
+		
+			<!-- Start Handy -->
+			<div id="handy" class="container-fluid px-0 mb-5">
+				<div class="container px-0">
+					<div class="row mx-0 bg-light-purple">
+						<div class="col-lg-12 col-md-12 col-sm-12 px-0 d-md-flex align-self-center">
+							<div id="background-1" class="background w-auto d-md-flex">
+								<div class="col-md-6  align-self-center text-center">
+									<div class="bho text-left">
+										<h2 class="title-prj mb-3" id="prj1-text">
+											Handy, the next sign language dictionary app
+										</h2>
+										<div class="tag-wrap d-flex mb-3">
+											<div class="tag">Research</div>
+											<div class="tag">UI/UX</div>
+											<div class="tag">Animation</div>
+										</div>
+										<a class="link link-project" href="handy.html"><u>Read case study</u></a>
+									</div>
 								</div>
-								
-							</div>
+								<div class="col-md-6 align-self-center desktop-only">
+									<div class="lottie-wrapper align-self-center border-black position-relative">
+										<img class="position-absolute" src="assets/handy-preview.svg" alt="handy-preview"/>
+										<lottie-player id="lotte-player" class="lottie-player" src="https://assets4.lottiefiles.com/packages/lf20_xxgku6ju.json" background="transparent" autoplay loop  speed="1" ></lottie-player>
+									</div>
+								</div>
+								</div>
 						</div>
 					</div>
-				</div> -->
-
-				<!-- Image Only -->
-				<!-- <div class="section">
-					<div class="wrapper pt-240">
-						<div class="inner anim5">
-							<div class="">
-								<img class="photo5 asyncImage" src="assets/photo5-min.jpg" data-src="assets/photo5.jpg" alt="">
-							</div>
-						</div>
-					</div>
-						
-				</div> -->
-
-
-				<!-- Double Paragraph -->
-				<!-- <div class="section">
-					<div class="wrapper pt-128">
-						<div class="inner anim6">
-							<span class="small"><p class="paragraph anim-paragraph6">Forever we remain oblivious to the future,</p></span>
-							<span class="small"><p class="paragraph anim-paragraph6">lost to the past and enduring our torture.</p></span>
-							<span class="small"><p class="paragraph anim-paragraph6">Forever we take chances to settle our scores,</p></span>
-							<span class="small"><p class="paragraph anim-paragraph6">losing some battles and winning some wars.</p></span>
-						</div>
-						<div class="inner">
-							<span class="small"><p class="paragraph anim-paragraph6">Forever we remain oblivious to the future,</p></span>
-							<span class="small"><p class="paragraph anim-paragraph6">lost to the past and enduring our torture.</p></span>
-							<span class="small"><p class="paragraph anim-paragraph6">Forever we take chances to settle our scores,</p></span>
-							<span class="small"><p class="paragraph anim-paragraph6">losing some battles and winning some wars.</p></span>
-						</div>
-					</div>
-				</div> -->
-
-				<!-- Image Only -->
-				<!-- <div class="section">
-					<div class="wrapper pt-240">
-						<div class="inner">
-							<div class="">
-								<img class="photo6 asyncImage" src="assets/photo6-min.jpg" data-src="assets/photo6.jpg" alt="">
-							</div>
-						</div>
-					</div> -->
-
-				<!-- Flag-->
-				<!-- <div class="section">
-					<div class="wrapper pt-240 ">
-						<div class="inner flag">
-							<div class="fush-container">
-								<span class="small"><h3 class="flag paragraph">Nuota</h3></span>
-								<span class="small"><h3 class="flag paragraph">tra</h3></span>
-								<span class="small"><h3 class="flag paragraph">le</h3></span>
-								<span class="small"><h3 class="flag paragraph">bandiere</h3></span>
-							</div>
-						</div>
-					</div>	
-				</div> -->
-						
 				</div>
-				<!-- Image Only -->
-				<!-- <div class="section">
-					<div class="wrapper pt-240">
-						<div class="inner">
-							<div class="">
-								<img class="photo7 asyncImage" src="assets/photo7-min.jpg" data-src="assets/photo7.jpg" alt="">
-							</div>
+			</div>
+			<!-- End Handy -->
+
+			<!-- Start 2FA -->
+			<div id="2fa" class="container-fluid px-0 mb-5">
+				<div class="container px-0">
+					<div class="row mx-0 bg-light-blue">
+						<div class="col-lg-12 col-md-12 col-sm-12 px-0 d-md-flex align-self-center">
+							<div id="background-1" class="background w-auto d-md-flex">
+								<div class="col-md-6  align-self-center text-center order-lg-1">
+									<div class="bho text-left">
+										<h2 class="title-prj mb-3" id="prj1-text">
+											Moneyfarm's two-factor authentication
+										</h2>
+										<div class="tag-wrap d-flex mb-3">
+											<div class="tag">UI/UX</div>
+											<div class="tag">Illustration</div>
+										</div>
+										<a class="link link-project" href="moneyfarm-2fa.html"><u>Read case study</u></a>
+									</div>
+								</div>
+								<div class="col-md-6 align-self-center order-lg-0 desktop-only">
+									<div class="lottie-wrapper align-self-center border-black">
+										<img class="position-absolute" src="assets/2fa-preview.svg" alt="handy-preview"/>
+										<lottie-player id="lotte-player" class="lottie-player" src="https://assets2.lottiefiles.com/packages/lf20_b734gvuh.json" background="transparent"  speed="1" loop autoplay></lottie-player>
+									</div>
+								</div>
+								</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<!-- Finish 2FA -->
+
+			<!-- Start Onboarding -->
+			<div id="onboarding" class="container-fluid px-0 mb-5">
+				<div class="container px-0">
+					<div class="row mx-0 bg-light-gray">
+						<div class="col-lg-12 col-md-12 col-sm-12 px-0 d-md-flex align-self-center">
+							<div id="background-1" class="background w-auto d-md-flex">
+								<div class="col-md-6  align-self-center text-center">
+									<div class="bho text-left">
+										<h2 class="title-prj mb-3" id="prj1-text">
+											Redesign the Moneyfarm Onboarding
+										</h2>
+										<div class="tag-wrap d-flex mb-3">
+											<div class="tag">UI/UX</div>
+											<div class="tag">Interaction</div>
+										</div>
+										<a class="link link-project" href="moneyfarm-onboarding.html"><u>Read case study</u></a>
+									</div>
+								</div>
+								<div class="col-md-6 align-self-center text-center desktop-only">
+									<div class="lottie-wrapper align-self-center border-black">
+										<img alt="hero" src="assets/onboarding/onboarding-home-hero.svg"/>
+									</div>
+									</div>
+								</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container initial-top-4 py-5 pb-5 mt-5 mb-5">
+				<div class="row">
+					<!-- <div class="col-lg-8 offset-lg-2 mb-5 text-center">
+						<h3 class="sub-title mb-0">In my spare time</h3>
+					</div> -->
+					<div class="col-lg-6 px-5 mb-5">
+						<a rel="noreferrer" href="photography.html"><div class="block block-ph d-flex align-items-center justify-content-center">
+							<h3 class="sub-title text-light mb-0">Photography</h3>
+						</div></a>
+					</div>
+					<div class="col-lg-6 px-5 mb-5">
+						<a rel="noreferrer" href="https://codepen.io/biscuttu" target="_blank"><div class="block block-code d-flex align-items-center justify-content-center">
+							<h3 class="sub-title text-light mb-0">Code + Motion</h3>
+							<img class="actions-squares mx-3 mb-2" alt="external-link" src="assets/external-link.svg"/>
+						</div></a>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+
+
+			<footer class="footer-light d-flex align-items-center">
+				<div class="container">
+					<div class="row d-flex justify-content-between">
+					<div class="d-flex justify-content-start col-md-4 col-sm-12 align-items-center">
+						<a href="https://www.instagram.com/biscuttu/" target="blank"><img class="social-icon ml-5" src="assets/instagram.svg" alt="instagram-icon"/></a>
+						<a href="https://dribbble.com/davidebiscuso" target="blank"><img class="social-icon ml-5" src="assets/dribbble.svg" alt="dribbble-icon"/></a>
+						<a href="https://www.linkedin.com/in/davide-biscuso/" target="blank"><img class="social-icon ml-5" src="assets/linkedin.svg" alt="linkedin-icon"/></a>
+					</div>
+					<div class="d-flex col-md-4 justify-content-center"><p id="" class="paragraph hand" style="font-size: 1.8em">👋🏻</p></div>
+					<div class="d-flex col-md-4 justify-content-end">
+							<a class="nav-link" href="about.html"><p class="paragraph mr-auto mt-2 line-height-0">
+								About				
+							</p></a>
+							<a class="nav-link" href="resume.html"><p class="paragraph mr-auto mt-2 line-height-0">
+								Resume				
+							</p></a>
+							<a class="nav-link" href="photography.html"><p class="paragraph mr-auto mt-2 line-height-0">
+								Photography				
+							</p></a>
+					</div>
+				</div>
+				</div>
+			</footer>
+			
+
+
+			
+
+
 						
-				</div> -->
 
 
-			</header>
-	  </main>
+	<!-- All GSAP3 library-->
+	<script src="https://biscu.design/cdn/nav.js"></script>
+	<script src="https://biscu.design/cdn/lottie.js"></script>
+	<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
 
-	<!-- GSAP3-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-	<script src="js/utils/split-text.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
-	<script src="js/CustomEase.min.js"></script>
-	<script src="index.js"></script>
+
+	<script>
+		function spellName() {
+			document.getElementById('name').innerHTML='Davide';
+			document.getElementById('name').classList.remove('err');
+			document.getElementById('name').classList.add('err-fallback');
+
+		}
+	</script>
+
+
+	
+
+
+
+
+
+
 
 
 </body>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, height=device-height">
+<meta name="description" content="Project Template">
+<title>Moneyfarm</title>
+<!-- Favicon -->
+<link rel="icon" href="assets/favicon.svg">
+<link rel="mask-icon" href="mask-icon.svg" color="#000000">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- CSS -->
+<link rel = "stylesheet" type = "text/css" href = "default.css" />
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="light">
+
+	<nav id="navbar" class="navbar fixed-top navbar-light">
+		<div class="container justify-content-between">
+					<a class="nav-link" href="index.html"><p class="paragraph mr-auto">
+						Home					
+					</p></a>
+					<a class="nav-link desktop-only" href="moneyfarm-onboarding.html"><p class="paragraph">
+						Next → Moneyfarm Onboarding
+					</p></a> 
+		</div>
+	</nav>
+
+				<div class="container initial-top-4">
+					<div class="row vh-70 align-self-center ">
+								<div class="col-lg-9 col-md-9 col-sm-12 align-self-center">
+									<h1 id="" class="heading mb-5">
+										Moneyfarm's two-factor authentication
+									</h1>
+									<div class="row mx-0 d-flex justify-content-between">
+										<div class="px-0">
+											<h2 id="" class="label mb-2">Company</h2>
+											<a target="_blank" href="https://www.moneyfarm.com/"><h3 id="" class="content"><u>Moneyfarm</u></h3></a>
+										</div>
+										<div class="px-0">
+											<h2 id="" class="label mb-2">Year</h2>
+											<h3 id="" class="content">2020</h3>
+										</div>
+										<div class="px-0">
+											<h2 class="label mb-2">Length</h2>
+											<h3 class="content">2 months</h3>
+										</div>
+										<div class="px-0">
+											<h2 id="" class="label mb-2">Team</h2>
+											<div id="dropdownTeam" class="dropdown d-flex nowrap align-items-center" onClick="showTeam()">
+											<h3 id="" class="mb-0">Infinite Flow Team</h3>
+											<img id="dropdown-icon" class="dropdown-icon" src="assets/arrow-down.svg"/>
+											</div>
+											<div id="overlayTeam" class="dropdown-overlay position-absolute">
+												<ul>
+													<li><p><a target="_blank" href="https://de.linkedin.com/in/johannes-freund-75050589"><u>Johannes Freund</u></a> - Product Owner</p></li>
+													<li><p><a target="_blank" href="https://www.linkedin.com/in/rpnna/"><u>Raimondo Pinna</u></a> - Front-end developer</p></li>
+													<li><p><a target="_blank" href="https://www.linkedin.com/in/andrea-aresu-b4a971151/"><u>Andrea Aresu</u></a> - iOS developer</p></li>
+													<li><p><a target="_blank" href="https://www.linkedin.com/in/marcocattaneo1/"><u>Marco Cattaneo</u></a> - Android Developer</p></li>
+													<li><p><a target="_blank" href="https://www.linkedin.com/in/richardallalouf/"><u>Richard Allalouf</u></a> - Content</p></li>
+												</ul>
+											</div>
+										</div>
+									</div>	
+								</div>
+									
+							</div>
+						</div>
+
+				<div class="container-fluid px-0">
+					<div class="row mx-0">
+						<div class="col-lg-12 col-md-12 col-sm-12 px-0">
+							<img class="main-image" src="assets/moneyfarm-2fa/2fa-hero.jpg"/>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Back to top button -->
+				<a id="top-button"  class="top-button" href="#index"><div>
+					<span>Back to index</span>
+				</div></a>
+
+				<!-- Index -->
+				<div id="index" class="container py-5">
+					<div class="row py-5">
+						<div class="col-lg-10 offset-lg-1 col-sm-12">
+							<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-prioritize.svg" alt="handy-favorite"/>
+							<h2 class="sub-title">
+								Index
+							</h2>
+							<p class="paragraph mb-5">
+								It's like teleporting but with a click!
+							</p>
+							<div class="row">
+								<div class="col-lg-4">
+									<h3>Discover</h3>
+									<a href="#1"><p class="paragraph-small">Customer feedback</p></a>
+									<a href="#2"><p class="paragraph-small">Gathering requirements</p></a>
+									<a href="#3"><p class="paragraph-small">Mapping the user journey</p></a>
+									<a href="#4"><p class="paragraph-small">Final flows and UI</p></a>
+								</div>
+								<div class="col-lg-4">
+									<h3>Testing</h3>
+									<a href="#5"><p class="paragraph-small">Security screen redesign</p></a>
+									<a href="#6"><p class="paragraph-small">Apps mention</p></a>
+									<a href="#7"><p class="paragraph-small">Disenrollment notification</p></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				
+
+				<!-- Title + Paragraph -->
+				<div class="container py-5">
+							<div class="row py-5">
+
+								<div class="col-md-6 col-sm-12 text-left py-5">
+									<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-problem.svg" alt="handy-favorite"/>
+									<h2 class="sub-title">
+										The problem
+									</h2>
+									<p class="paragraph">
+										Relying solely on a regular login using email and password is a potential security risk for our customers. In addition to that, for certain customers, the perceived risk of not having two-factor authentication is very high, leading to a decrease in trust of the Moneyfarm platform and the company as a whole.
+									</p>
+								</div>
+
+								<div class="col-md-6 col-ms-12 text-left py-5">
+									<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-goal.svg" alt="handy-favorite"/>
+									<h2 class="sub-title">
+										The goal
+									</h2>
+									<p class="paragraph">
+										Provide an easy to use solution for two-factor authentication login, leveraging the MultiFactor capabilities of our authentication provider Auth0.
+									</p>
+								</div>
+							</div>
+				</div>
+
+				<div class="wrap">
+					<div class="container py-5">
+						<div class="row d-flex align-items-center mb-5">
+							<div class="col-lg-8 offset-lg-2 col-sm-12 text-center">
+								<h2 class="hero mb-5 mb-md-0">
+									Discover
+								</h2>
+								<p class="paragraph">
+									Understand the problem and turn it into an opportunity for the business and the customers. Align with all the team and stakeholders and sketch out solutions.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="1" class="wrap">
+					<div class="container py-5">
+						<div class="row d-flex align-items-center py-5">
+							<div class="col-lg-8 offset-lg-2 col-sm-12">
+								<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-survey.svg" alt="handy-favorite"/>
+								<h2 class="sub-title mb-5 mb-md-0">
+									Customer feedback
+								</h2>
+								<p class="paragraph">
+									Potential customers were expressing their concern to our CRM team in opening an account with Moneyfarm given the lack of security functionality that is a standard in the financial domain. Current customers kept asking for this new layer of security in the app reviews. 
+								</p>
+							</div>
+						</div>
+						<div class="row d-flex align-items-top py-5">
+							<div class="col-lg-4 col-sm-12 text-center">
+								<img class=" mb-3" src="assets/moneyfarm-2fa/2fa-feedback-1.svg" alt="handy-favorite"/>
+							</div>
+
+							<div class="col-lg-4 col-sm-12 text-center">
+								<img class=" mb-3" src="assets/moneyfarm-2fa/2fa-feedback-2.svg" alt="handy-favorite"/>
+							</div>
+
+
+							<div class="col-lg-4 col-sm-12 text-center">
+								<img class="mb-3" src="assets/moneyfarm-2fa/2fa-feedback-3.svg" alt="handy-favorite"/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="2" class="wrap">
+					<div class="container py-5">
+						<div class="row d-flex align-items-center ">
+							<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+								<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-comparison.svg" alt="handy-favorite"/>
+								<h2 class="sub-title mb-5 mb-md-0">
+									Gathering requirements 
+								</h2>
+								<p class="paragraph">
+									We gathered with product owners and developers to understand the scope of the project, the feasibility given by our third-party provider, and the desired outcome of the feature.
+								</p>
+							</div>
+							<div class="col-lg-12 col-sm-12">
+								<img class="mb-3" src="assets/moneyfarm-2fa/2fa-requirements.svg" alt="handy-favorite"/>
+							</div>
+						</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div id="3" class="wrap">
+					<div class="container py-5">
+						<div class="row d-flex align-items-center py-5">
+							<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+								<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-task.svg" alt="handy-favorite"/>
+								<h2 class="sub-title mb-5 mb-md-0">
+									Mapping the user journey 
+								</h2>
+								<p class="paragraph">
+									I started mapping out the user journey while asking questions the various expert such as developers and product owners. The journey flow was then divided into main flows.
+								</p>
+							</div>
+							<div class="col-lg-12 col-sm-12">
+								<img class="mb-3" src="assets/moneyfarm-2fa/2fa-user-journey.svg" alt="handy-favorite"/>
+							</div>
+						</div>
+						</div>
+
+					</div>
+
+					<div id="4" class="wrap">
+						<div class="container py-5">
+							<div class="row d-flex align-items-center py-5">
+								<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+									<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-wireframe.svg" alt="handy-favorite"/>
+									<h2 class="sub-title mb-5 mb-md-0">
+										The enrolment on App
+									</h2>
+									<p class="paragraph">
+										Enabling the second factor was possible straight from the mobile app installed on the desired device to be used as authentication. 
+									</p>
+								</div>
+								<div class="col-lg-12 col-sm-12">
+									<img class="mb-3" src="assets/moneyfarm-2fa/2fa-enrolment.svg" alt="handy-favorite"/>
+								</div>
+							</div>
+							</div>
+	
+						</div>
+
+						<div class="wrap">
+							<div class="container py-5">
+								<div class="row d-flex align-items-center py-5">
+									<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+										<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-laptop.svg" alt="handy-favorite"/>
+										<h2 class="sub-title mb-5 mb-md-0">
+											The enrolment on Web
+										</h2>
+										<p class="paragraph">
+											If the user would activate the two-factor from the browser the main difference with the app journey would be the scan of the QR code, necessary to pair the mobile device with the user account.
+										</p>
+									</div>
+									<div class="col-lg-12 col-sm-12">
+										<img class="mb-3" src="assets/moneyfarm-2fa/2fa-enrolment-web.svg" alt="handy-favorite"/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="wrap">
+							<div class="container py-5">
+								<div class="row d-flex align-items-center py-5">
+									<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+										<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-laptop.svg" alt="handy-favorite"/>
+										<h2 class="sub-title mb-5 mb-md-0">
+											The login on web
+										</h2>
+										<p class="paragraph">
+											To login into the web app with a 2FA active the user needed to authorize the access on the paired device. A notification would display the attempted login and the location. 
+										</p>
+									</div>
+									<div class="col-lg-12 col-sm-12">
+										<img class="mb-3" src="assets/moneyfarm-2fa/2fa-login-web.svg" alt="handy-favorite"/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="wrap">
+							<div class="container py-5">
+								<div class="row d-flex align-items-center py-5">
+									<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+										<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-prioritize.svg" alt="handy-favorite"/>
+										<h2 class="sub-title mb-5 mb-md-0">
+											Other options to login
+										</h2>
+										<p class="paragraph">
+											We considered the cases where the user could not receive a notification to login and added two additional functionalities on the mobile app.
+										</p>
+									</div>
+									<div class="col-lg-12 col-sm-12">
+										<img class="mb-3" src="assets/moneyfarm-2fa/2fa-scan-code.svg" alt="handy-favorite"/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+							<div class="wrap">
+								<div class="container py-5">
+									<div class="row d-flex align-items-center mb-5">
+										<div class="col-lg-8 offset-lg-2 col-sm-12 text-center">
+											<h2 class="hero mb-5 mb-md-0">
+												Testing
+											</h2>
+											<p class="paragraph">
+												The outcome of internal testing and feedback from a closed release to selected customers.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div id="5" class="wrap">
+								<div class="container py-5">
+									<div class="row d-flex align-items-center py-5">
+										<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+											<!-- <img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-personas.svg" alt="handy-favorite"/> -->
+											<h2 class="sub-title mb-5 mb-md-0">
+												The security screen needed some clean up
+											</h2>
+											<p class="paragraph">
+												With the increase of functionalities in the security screen, it became much harder for the user to easily scan and find the desired item in the list. I redesigned the screen taking in consideration layout, common used patterns and iconography.
+											</p>
+											</div>
+											<div class="col-lg-12 col-sm-12">
+												<img class="mb-3" src="assets/moneyfarm-2fa/2fa-security-ba.svg" alt="handy-favorite"/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="6" class="wrap">
+								<div class="container py-5">
+									<div class="row d-flex align-items-center py-5">
+										<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+											<!-- <img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-personas.svg" alt="handy-favorite"/> -->
+											<h2 class="sub-title mb-5 mb-md-0">
+												The app wasn't mentioned on web
+											</h2>
+											<p class="paragraph">
+												
+											During the first iteration of the flow, I assumed our users had already our app installed, and that they knew it was required to enable the two-factor authentication. Well, they didn't. At the beginning of the flow, I added another step inviting the user to download the app.
+											</p>
+											</div>
+											<div class="col-lg-12 col-sm-12">
+												<img class="mb-3" src="assets/moneyfarm-2fa/2fa-enrolment-web-ba.svg" alt="handy-favorite"/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="7" class="wrap">
+								<div class="container py-5">
+									<div class="row d-flex align-items-center py-5">
+										<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+											<!-- <img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-personas.svg" alt="handy-favorite"/> -->
+											<h2 class="sub-title mb-5 mb-md-0">
+												App confirmation was needed for the disenrollment
+											</h2>
+											<p class="paragraph">
+												If the user decided to disable the second factor, a notification would be sent to the paired device to confirm. We discovered that this was a logic coming from our third-party tool. This wasn't indeed mentioned in the modal and some of the early users were confused by that, by clicking the button nothing would really happen. I changed the illustrations, copy and removed the buttons to prompt the user to check their phone to confirm.
+											</p>
+											</div>
+											<div class="col-lg-12 col-sm-12">
+												<img class="mb-3" src="assets/moneyfarm-2fa/2fa-disenrloment.svg" alt="handy-favorite"/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+					<a class="final" href="moneyfarm-onboarding.html"><div class="wrap final">
+						<div class="container">
+							<div class="row py-5">
+								<div class="col-lg-12 text-center py-5">
+									<p class="label mb-4">Up next</p>
+									<h2 class="sub-title">Moneyfarm's Onboarding</h2>
+								</div>
+							</div>
+						</div>
+					</div></a>
+
+
+
+	<!-- Lottie JS -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+	<!-- All GSAP3 library-->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+	<script src="https://biscu.design/cdn/nav.js"></script>
+	<script src="https://biscu.design/cdn/top.js"></script>
+	<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+
+	
+
+
+
+
+
+</body>
+</html>

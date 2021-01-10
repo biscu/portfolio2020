@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, height=device-height">
+<meta name="description" content="Project Template">
+<title>Moneyfarm Onboarding</title>
+<!-- Favicon -->
+<link rel="icon" href="assets/favicon.svg">
+<link rel="mask-icon" href="mask-icon.svg" color="#000000">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- CSS -->
+<link rel = "stylesheet" type = "text/css" href = "default.css" />
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="light">
+
+	<nav id="navbar" class="navbar fixed-top navbar-light">
+		<div class="container justify-content-between">
+					<a class="nav-link" href="index.html"><p class="paragraph mr-auto">
+						Home					
+					</p></a>
+					<a class="nav-link desktop-only" href="handy.html"><p class="paragraph">
+						Next → Handy App
+					</p></a> 
+		</div>
+	</nav>
+
+				<div id="index" class="container initial-top-4">
+					<div class="row vh-70 align-self-center ">
+								<div class="col-lg-9 col-md-9 col-sm-12 align-self-center">
+									<h1 id="" class="heading mb-5">
+										Redesign Moneyfarm's onboarding
+									</h1>
+									<div class="row mx-0  d-flex justify-content-between">
+										<div class=" px-0">
+											<h2 id="" class="label mb-2">Company</h2>
+											<a target="_blank" href="https://www.moneyfarm.com/"><h3 id="" class="content"><u>Moneyfarm</u></h3></a>
+										</div>
+										<div class="px-0">
+											<h2 id="" class="label mb-2">Year</h2>
+											<h3 id="" class="content">2019</h3>
+										</div>
+										<div class="px-0">
+											<h2 id="" class="label mb-2">Length</h2>
+											<h3 id="" class="content">2 months</h3>
+										</div>
+										<div class="px-0">
+											<h2 id="" class="label mb-2">Team</h2>
+											<div id="dropdownTeam" class="dropdown d-flex nowrap align-items-center" onClick="showTeam()">
+											<h3 id="" class="mb-0">Infinite Flow Team</h3>
+											<img id="dropdown-icon" class="dropdown-icon" src="assets/arrow-down.svg"/>
+											</div>
+											<div id="overlayTeam" class="dropdown-overlay position-absolute">
+												<ul>
+													<li><p><a target="_blank" href="https://de.linkedin.com/in/johannes-freund-75050589"><u>Johannes Freund</u></a> - Product Owner</p></li>
+													<li><p><a target="_blank" href="https://www.linkedin.com/in/rpnna/"><u>Raimondo Pinna</u></a> - Front-end developer</p></li>
+													<li><p><a target="_blank" href="https://www.linkedin.com/in/andrea-aresu-b4a971151/"><u>Andrea Aresu</u></a> - iOS developer</p></li>
+													<li><p><a target="_blank" href="https://www.linkedin.com/in/marcocattaneo1/"><u>Marco Cattaneo</u></a> - Android Developer</p></li>
+													<li><p><a target="_blank" href="https://www.linkedin.com/in/richardallalouf/"><u>Richard Allalouf</u></a> - Content</p></li>
+												</ul>
+											</div>
+										</div>
+									</div>	
+								</div>
+									
+							</div>
+				</div>
+
+				<div class="container-fluid px-0">
+					<div class="row mx-0">
+						<div class="col-lg-12 col-md-12 col-sm-12 px-0">
+							<img class="main-image" src="assets/onboarding/onboarding-hero.svg"/>
+						</div>
+					</div>
+				</div>
+
+				<!-- Back to top button -->
+				<a id="top-button"  class="top-button" href="#index"><div class="">
+					<span>Back to top</span>
+				</div></a>
+
+				
+
+				<!-- Title + Paragraph -->
+				<div class="container py-5 mt-5">
+							<div class="row">
+								<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+									<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-problem.svg" alt="handy-favorite"/>
+									<h2 class="sub-title">
+										The problem
+									</h2>
+									<p class="paragraph">
+										Analytics was showing us a big drop off in a specific part of account creation. The screen was cluttered with information and input fields, it was hard to prevent error and it was challenging to identify a specific part of the form that was unclear to the end-user.
+									</p>
+								</div>
+							</div>
+				</div>
+
+				<div class="container py-1">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 col-sm-12">
+							<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-goal.svg" alt="handy-favorite"/>
+							<h2 class="sub-title">
+								My role
+							</h2>
+							<p class="paragraph">
+								I was responsible for the whole redesign of the onboarding: from identifying existing usability issues to proposing solutions and designing the navigation and visual restyle of the mobile components.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			
+
+				<div class="wrap">
+					<div class="container py-5">
+						<div class="row d-flex align-items-center py-5">
+							<div class="col-lg-8 offset-lg-2 col-sm-12">
+								<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-survey.svg" alt="handy-favorite"/>
+								<h2 class="sub-title mb-5 mb-md-0">
+									Current state
+								</h2>
+								<p class="paragraph">
+									The account creation flow (called within the company "onboarding") had each main sections cluttered in one long scroll screen, overwhelming the user that, disoriented by such amounts of inputs, would drop out of the flow. Also, it was hard to handle errors and validations that would happen all at the same time on at a press of the button. Finally, the old cluttered screen didn't give us any insights regarding which input field the user had more issues with because everything was happening in one screen.
+								</p>
+							</div>
+						</div>
+						<div class="row d-flex align-items-top py-5">
+							<div class="col-lg-12 col-sm-12">
+								<img class="mb-3" src="assets/onboarding/onboarding-issue.svg" alt="handy-favorite"/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrap">
+					<div class="container py-5">
+						<div class="row d-flex align-items-center ">
+							<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+								<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-personas.svg" alt="handy-favorite"/>
+								<h2 class="sub-title mb-5 mb-md-0">
+									The new navigation
+								</h2>
+								<p class="paragraph">
+									The new navigation presents the user, trough progressive disclosure, one request of information at a time, letting the user focus on multiple simple tasks and one single call to action always visible. A progress bar was introduced to make the user aware and informed of his progression in the flow.
+								</p>
+							</div>
+							<div class="col-lg-12 col-sm-12">
+								<img class="mb-3" src="assets/onboarding/onboarding-new.svg" alt="handy-favorite"/>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="wrap">
+					<div class="container py-5">
+						<div class="row d-flex align-items-center py-5">
+							<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+								<img class="actions-squares mb-3" src="assets/handy/handy-actions-squares-personas.svg" alt="handy-favorite"/>
+								<h2 class="sub-title mb-5 mb-md-0">
+									Mobile components 
+								</h2>
+								<p class="paragraph">
+									The new UI library had to support the new approach of the flow by offering a more simple interface and interaction. If, from one hand the style didn't drastically change, but more rearranged and polished, on the other hands the interactions with the components had to be rethought: auto-focus states, keyboard behaviour and interactions, error messages and validations logic.
+								</p>
+							</div>
+							<div class="col-lg-12 col-sm-12">
+								<img class="mb-3" src="assets/onboarding/onboarding-ui.svg
+								" alt="handy-favorite"/>
+							</div>
+						</div>
+						</div>
+					</div>
+
+
+
+					<div class="wrap">
+						<div class="container py-5">
+							<div class="row d-flex align-items-center py-5">
+								<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+									<h2 class="sub-title mb-5 mb-md-0">
+										Final UI 
+									</h2>
+									<p class="paragraph">
+										At the beginning of each section of the account creation, I designed an intro screen explaining the next steps and setting up the expectation for the user. For each section, I used the mobile components to create a simple progression of inputs fields.
+									</p>
+								</div>
+								<div class="col-lg-12 col-lg-12">
+									<img class="mb-4" src="assets/onboarding/onboarding-ui-2.svg
+									"/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrap">
+						<div class="container py-5">
+							<div class="row d-flex align-items-center py-5">
+								<div class="col-lg-8 offset-lg-2 col-sm-12 mb-5">
+									<h2 class="sub-title mb-5 mb-md-0">
+										A/B Testing
+									</h2>
+									<p class="paragraph">
+										The new design was first released to a 50% of our customer base and A/B tested against the control version.
+									</p>
+								</div>
+								<div class="col-lg-12 col-lg-12">
+									<img class="mb-4" src="assets/onboarding/onboarding-ui-2.svg
+									"/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<a class="final" href="handy.html"><div class="wrap final">
+						<div class="container">
+							<div class="row py-5">
+								<div class="col-lg-12 text-center py-5">
+									<p class="label mb-4">Up next</p>
+									<h2 class="sub-title">Handy App</h2>
+								</div>
+							</div>
+						</div>
+					</div></a>
+
+
+
+	<!-- Lottie JS -->
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+	<script src="https://biscu.design/cdn/nav.js"></script>
+	<script src="https://biscu.design/cdn/top.js"></script>
+	<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+
+	
+
+
+
+
+
+</body>
+</html>
