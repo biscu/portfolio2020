@@ -4,7 +4,7 @@ This repository contains my portfolio built in 2020
 
 https://biscu.github.io/portfolio2020/
 
-##Technologies##
+## Technologies
 
 * Html/Css
 * Javascript
